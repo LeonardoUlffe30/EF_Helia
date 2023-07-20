@@ -1,0 +1,559 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar section*/
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: #10f110;
+}
+
+.logo-container {
+    display: flex;
+    place-items: center;
+    margin-left: 20px;
+}
+
+.imgLogo {
+    width: 40px;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'heebo';
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+.navbar-div {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0px; 
+    display: flex;
+    gap: 8px;   
+}
+
+.nav-item {
+    display: inline;
+    padding: 0px 16px;
+}
+
+.nav-link  {
+    text-decoration: none; 
+    font-family: 'heebo'; 
+    font-weight: bolder;
+    font-size: 20px; 
+}
+
+/*Hero section*/
+.alojamiento {
+    width: 100%;
+}
+
+.hero-div {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
+}
+
+.download-div {
+    margin-left: auto;
+    margin-right: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.hero-h {
+    text-align: center;
+    font-family: 'heebo';
+    margin-left: 15px;
+    color:#457c12;
+}
+
+/*Sobre Nosotros section*/
+#sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    place-items: center;
+    margin: 20px 40px;
+    padding: 0px 80px;
+    gap: 20px;
+}
+
+.imghelia-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.helia-inc {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 10px 1px rgb(0, 0, 0,0.3);
+}
+
+.info-sobre-nosotros {
+    align-items: center;
+    margin-left: 10%;
+}
+
+.info-sobre-nosotros h2 {
+    color:#457c12;
+    font-family: 'Heebo';
+}
+
+.info-sobre-nosotros p {
+    color: #072a16;
+    text-align: justify;
+    font-family: 'Jost';
+    font-weight: bolder;
+} 
+/*Como Funciona*/
+#servicio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    margin: 0px 40px;
+    gap: 20px;
+}
+
+.servicio-helia {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 10px 1px rgb(0, 0, 0,0.3);
+}
+
+.servicio-div h2 {
+    color:#457c12;
+    font-family: 'Heebo';
+}
+
+.servicio-div p {
+    color: #072a16;
+    font-family: 'Jost';
+    font-weight: bolder;
+    text-align: justify;
+}
+
+/*Como Funciona*/
+#como-funciona h2 {
+    color:#457c12;
+    font-family: 'Heebo';
+    margin-top: 30px;
+    margin-left: 180px;
+}
+
+#como-funciona h3 {
+    color: #072a16;
+    font-family: 'Jost';
+    text-align: center;
+}
+
+.carousel {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.containerComoFunciona {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    position:absolute;
+    padding: 0px 50px;
+    gap: 1rem;
+    place-items: center;
+    inset:0;
+    opacity: 0;
+    left: 35%;
+    right: 10%;
+    transform: translateX(-25%);
+    transition:200ms opacity ease-in-out;
+    transition-delay: 10ms;
+}
+
+.containerComoFunciona[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255, 0.5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0.5 rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.carousel-button:hover, .carousel-button:focus {
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.previous {
+    left: 8rem;
+}
+
+.carousel-button.next {
+    right: 10rem;
+}
+
+.imgCF {
+    width: 200px;
+    border: 1px solid rgba(1,1,1,0.2);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+    border-radius: 25px;
+}
+
+.dInfoCF p {
+    color: #072a16;
+    text-align: justify;
+    font-family: 'Jost';
+    font-weight: bolder;
+}
+
+/*footer*/
+#contactanos {
+    background-color: #10f110;
+    width: 100%;
+    height: 35vh;
+    margin-top: 50px;
+}
+
+.contactanos-div p {
+    color: #072a16;
+    font-family: 'Jost';
+    font-weight: bold;
+}
+.contactanos-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    place-items: center;
+    gap: -10px;
+}
+
+.description-helia-footer {
+    text-align: justify;
+}
+.contactanos-div li, .contactanos-div li a {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.containerRedes {
+    display:inline-block;
+    margin-left: 37px;
+    margin-top: -5px; 
+    margin-bottom: 20px;
+}
+
+.containerRedes a {
+    margin: 0px 5px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid rgb(255,255,255);
+    margin: -2px 0px -10px 0px;
+}
+
+.copy-right {
+    color: #072a16;
+    font-family: 'Jost';
+    font-weight: bold;
+    float: right;
+    margin-top: 20px;
+    margin-right: 70px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    /*Navbar*/
+    .navbar-container {
+        height: 60px;
+    }
+    .imgLogo {
+        width: 25px;
+    }
+    
+    .navbar-brand {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+    
+    .open-menu, .close-menu {
+        display:block;
+        border: 0;
+        font-size: 1.8rem;
+        background-color: transparent;
+    }
+
+    .open-menu {
+        margin-right: 1.10rem;
+    }
+    
+    .navbar-div {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        z-index: 9;
+        right: 0;
+        bottom: 0;
+        background-color: #98f56d;
+        padding: 2rem;
+        margin-right: 0;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    }
+
+    .navbar-div.visible {
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Hero Sectin*/
+    .hero-h {
+        font-size: 15px;
+    }
+
+    .download-div {
+        flex-direction: column;
+        gap: 3px;
+        margin-right: 17px;
+    }
+    .appStore {
+        width: 80px;
+    }
+
+    .playStore {
+        width: 80px;
+    }
+
+    /*Sobre Nosotros*/
+    #sobre-nosotros {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px 25px 20px;
+        padding: 0rem 1.05rem;
+        gap: 0.1rem;
+    }
+
+    .info-sobre-nosotros {
+        margin-left: 0;
+    }
+    
+    .info-sobre-nosotros h2 {
+        text-align: center;
+        margin-top: 0.35rem;
+    }
+    
+    .info-sobre-nosotros p {
+        margin-top:-1rem; 
+    }
+
+    /*Servicio*/
+    #servicio {
+        display: flex;
+        flex-direction: column-reverse;
+        place-items: center;
+        margin: 10px 20px 25px 20px;
+        padding: 0rem 1.05rem;
+        gap: 0.1rem;
+    }
+    
+    .imgServicio-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .helia-inc {
+        width: 90%;
+    }
+
+    .servicio-helia {
+        width: 90%;
+        border-radius: 15px;
+        box-shadow: 5px 8px 10px 1px rgb(0, 0, 0,0.3);
+    }
+    
+    .servicio-div h2 {
+        text-align: center;
+        margin-top: 0.35rem;
+    }
+    
+    .servicio-div p {
+        margin-top:-1rem; 
+    }
+
+    /*Como Funciona*/
+    #como-funciona {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    #como-funciona h2 {
+        margin: 0;
+    }
+    
+    #como-funciona h3 {
+        margin-top: 0.30rem;
+    }
+    
+    .carousel {        
+        width: 100%;
+        height: 33rem;
+    }
+    
+    .containerComoFunciona {
+        display: inline;
+        padding: 0.80rem 0.25rem;
+        gap: 0.25rem;
+        place-items: center;
+        justify-content: center;
+        inset:0;
+        opacity: 0;
+        left: 35%;
+        right: 0%;
+        transform: translateX(-27%);
+        transition:200ms opacity ease-in-out;
+        transition-delay: 10ms;
+    }
+    
+    .containerComoFunciona[data-active] {
+        opacity: 1;
+        z-index: 1;
+        transition-delay: 0ms;
+    }
+    
+    .carousel-button {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255,255,255, 0.5);
+        cursor: pointer;
+        border-radius: .25rem;
+        padding: 0.25rem;
+        background-color: rgba(0,0,0,0.3);
+    }
+    
+    .carousel-button:hover, .carousel-button:focus {
+        color: white;
+        background-color: rgba(0,0,0,0.4);
+    }
+        
+    .carousel-button.previous {
+        left: 1rem;
+    }
+    
+    .carousel-button.next {
+        right: 1rem;
+    }
+
+    .dImgCF {
+        text-align: center;
+    }
+
+    .imgCF {
+        width: 12rem;
+    }
+    
+    .dInfoCF p {
+        text-align: center;
+    }
+
+    /*Footer*/
+    #contactanos {
+        width: 100%;
+        height: unset;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        margin-top: 50px;
+    }
+    
+    .description-helia-footer {
+        padding: 0rem 4px;
+        text-align: center;
+    }
+
+    .contactanos-div p {
+        margin: 0;
+        padding: 0;
+    }
+    .contactanos-div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .containerRedes {
+        display:flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 0;
+    }
+    
+    hr {
+        border: 1px solid rgb(255,255,255);
+        margin: 1rem 0px 10px 0px;
+    }
+    
+    .copy-right {
+        float: none;
+        padding: 0;
+        margin: 0;
+        top: 10px;
+        font-size: 13px;
+    }
+}

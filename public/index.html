@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="U20201F429">
+    <link rel="stylesheet" href="/public/assets/styles/styles.css">
+    <script src="/public/assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Helia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Jost:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-container">
+    <div class="logo-container">
+        <img class="imgLogo" src="/public/assets/imagenes/Logo.jpg" alt="logoHelia">
+        <a class="navbar-brand" href="#">Helia</a>
+    </div>
+    <button class="open-menu" id="open-menu"><i class="bi bi-list"></i></button>
+    <div class="navbar-div" id="navbar-div">
+      <ul class="navbar-nav">
+        <button class="close-menu" id="close-menu"><i class="bi bi-x-lg"></i></button>
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Servicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cómo Funciona</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-div">
+      <h1 class="hero-h">Alojamientos únicos en todo el mundo para escapar de la rutina</h1>
+      <div class="download-div">
+        <img class="appStore" src="/public/assets/imagenes/DescargarEnAppStore.svg" alt="Download on App Store">
+        <img class="playStore" src="/public/assets/imagenes/DescargarEnGooglePlay.svg" alt="Get it on Play Store" width="130px">    
+      </div>
+    </div>
+    <img class="alojamiento" src="/public/assets/imagenes/Alojamiento.jpg" alt="Alojamiento">
+  </section>
+  
+  <section id="sobre-nosotros">
+    <div class="info-sobre-nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Helia Inc. es una empresa europea fundanda en el año 2010, cuyo objetivo es satisfacer la reserva de 
+        alojamientos en todo el continente europeo. Nuestro público objetivo está conformado por Huéspedes entre 
+        35 y 55 años, y Hoteles, Resort, Villas y Departamentos que quieran ofrecer sus ambientes como estadía. 
+      </p>
+    </div>
+    <div class="imghelia-div">
+      <img class="helia-inc" src="/public/assets/imagenes/HeliaInc.jpg" alt="HeliaInc">
+    </div>
+  </section>
+
+  <section id="servicio">
+    <div class="imgServicio-div">
+      <img class="servicio-helia" src="/public/assets/imagenes/Servicio.jpg" alt="Servicio">
+    </div>
+    <div class="servicio-div">
+      <h2>Servicio</h2>
+      <p>Helia es un mobile App que permite encontrar el Alojamiento Ideal, mostrando toda la información de los 
+        alojamientos con precios atractivos y competitivos.
+      </p>
+    </div>
+  </section>
+    
+  <section id="como-funciona">
+    <h2>Cómo Funciona</h2>
+    <h3>Welcome Section</h3>
+    <div class="carousel" data-carousel>
+        <button class="carousel-button previous" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+            <li class="containerComoFunciona" data-active="true">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/24-Welcome.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Pantalla de Bienvenida a la Aplicación</p>
+                </div>
+            </li>
+
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/01-Sign up.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Registro a la aplicación mediante una cuanta Facebook, Google, Apple o mediante
+                        correo electrónico.
+                    </p>
+                </div>
+            </li>
+
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/02-Sign in.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Inicio de sesión medinate usuario y contraseña o cuentas de Google, Facebook, iOS.</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/04-Forgot password.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Reseteo de contraseña mediante el envio de mensaje al celular o correo electrónico.</p>
+                </div>
+            </li>
+        </ul>  
+    </div>
+
+    <h3>Home Section</h3>
+    <div class="carousel" data-carousel>
+        <button class="carousel-button previous" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+            <li class="containerComoFunciona" data-active>
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/05-Home.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Home de Bienvenida con la visualización de Hoteles recomendados.</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/06-Recently booked.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización del listado de los últimos hoteles reservados (Recently Booked).</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/07-My Bookmark.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización del listado de los hoteles marcados como favoritos (My Bookmark).</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/08-Recommended.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización del listado de todos los hoteles recomendados.</p>
+                </div>
+            </li>
+        </ul>   
+    </div>
+
+    <h3>Profile settings</h3>
+    <div class="carousel" data-carousel>
+        <button class="carousel-button previous" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+            <li class="containerComoFunciona" data-active="true">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/03-Profile.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Gestión de Profile del usuario registrado en la aplicación.</p>
+                </div>
+            </li>
+
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/25-Notification.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Notificación para recibir estados de procesos realizados en la aplicación y novedades de
+                        promociones y ofertas</p>
+                </div>
+            </li>
+
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/09-Search.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Búsqueda de Hotel mediante un texto de búsqueda.</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/10-Filter.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Filtrado de búsqueda por Pais, orden, precio, estrellas, instalaciones y tipo</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes//11-Result search.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización del resultado de la búsqueda de hoteles</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/12-Detail1.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización del detalle, descripción, instalaciones y localización de un hotel.</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/14-Galery.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización de la galeria de fotos de un hotel.</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/15-Review.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización de la calificación y comentarios de un Hotel.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h3>Make a purchase</h3>
+    <div class="carousel" data-carousel="true">
+        <button class="carousel-button previous" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+            <li class="containerComoFunciona" data-active="true">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/16-Check in Check out.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Reserva de Hotel especificando el Check in, Check out y cantidad de personas.</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/17-Payment.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Selección de diferentes medios de pago como Paypal, Google Pay, Apple Pay, tarjeta de
+                        crédito y débito.</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/18-Confirm Payment.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Confirmación de pago de reserva con el detalle de reserva seleccionado</p>
+                </div>
+            </li>
+        
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/19-Ticket.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Generación y descarga del Ticket (Comprobante de pago) de forma automática con el detalle
+                        de reserva</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/20-My Booking.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Visualización del Historial de reservas realizadas en la Aplicación (My Booking).</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/21-Cancel Booking.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Cancelación de la reserva de un hotel con devolución incluida..</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/22-Refunded payment.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Selección del medios de pago donde se realizará la devolución del 80%.</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/23-Confirm Cancelation.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Confirmación de la cancelación de la reserva y devolución del 80% del dinero.</p>
+                </div>
+            </li>
+            
+            <li class="containerComoFunciona">
+                <div class="dImgCF">
+                    <img class="imgCF" src="/public/assets/imagenes/26-Rate.png" alt="">
+                </div>
+                <div class="dInfoCF">
+                    <p>Calificar y comentar la experiencia de alojarse en un Hotel.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+  </section>
+       
+  <section id="contactanos">
+    <ul class="contactanos-div">
+        <li>
+            <p class="description-helia-footer">Helia Inc. busca satisfacer la reserva de alojamientos en todo 
+                Europa a través de Hoteles, Resort, Villas y Departamentos. </p>
+        </li>
+        <li>
+            <p href="#">Soporte</p>
+            <a href="#">Consultas</a><br>
+            <a href="#">Tutoriales</a>
+        </li>
+        <li>
+            <p href="#">Nosotros</p>
+            <a href="#">¿Quiénes somos?</a><br>
+            <a href="#">¿Qué hacemos?</a>
+        </li>
+        <li>
+            <p href="#">Contactanos</p>
+            <a href="#">La Mar 159, San Miguel</a><br>
+            <a href="https://wa.me/+51942685343" target="_blank">+51 942 685 343</a><br>
+            <a href="#">helia@gmail.com</a>
+        </li>
+    </ul>
+    <div class="containerRedes">
+        <a href="#facebook" class="fa fa-facebook-f"></a>
+        <a href="#twitter" class="fa fa-twitter-square"></a>
+        <a href="#youtube" class="fa fa-youtube-play"></a>
+    </div>
+    <hr>
+    <small class="copy-right">&copy; Copyright, Terms & Conditions, Privacy Policy, Accesibility</small>
+  </section>
+
+  <script src="https://kit.fontawesome.com/8d21a58f1d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
